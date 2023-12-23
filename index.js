@@ -26,13 +26,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// Enable cors
-app.use(
-    cors({
-      origin: '*',
-    }),
-  );
-
 app.use("/api/veterinarios", veterinarioRoutes);
 app.use("/api/pacientes", pacienteRoutes);
 
